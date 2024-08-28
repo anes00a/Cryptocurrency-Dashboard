@@ -1,0 +1,65 @@
+/* src/App.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.crypto-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0;
+}
+
+.crypto-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #fff;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.crypto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.crypto-card h2 {
+  font-size: 1.25rem;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.crypto-card p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.crypto-card .price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #2d72d9;
+}
+
+.crypto-card .change {
+  color: #d9534f;
+  font-weight: bold;
+}
+
+.crypto-card .change.positive {
+  color: #5bc0de;
+}
